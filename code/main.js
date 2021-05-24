@@ -10,7 +10,13 @@ const myImage = new Image();
 
 myImage.src = '../images/disney-junior-T-O-T-S.jpg';
 
-/*Reference canvas using getElementById*/
+/*Add event listener to myImage. This listens for a load event and pass it to a call back function*/
+
+/*Add code into event listener call back function*/
+
+myImage.addEventListener('load', function() {
+
+    /*Reference canvas using getElementById*/
 
 const canvas = document.getElementById('canvas1');
 
@@ -26,10 +32,6 @@ canvas.height = 440;
 /*Draw image on canvas using built-in html canvas method drawImage. The method will take five arguments: The first is the image we want to draw,the second and third arguments are the (x,y) cordinates of our drawing starting point and the fourth and fifth arguments are the drawing end points represented as canvas width and height.*/
 
 ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
-
-/*Add event listener to myImage. This listens for a load event and pass it to a call back function*/
-
-myImage.addEventListener('load', function() {
     
 });
 
