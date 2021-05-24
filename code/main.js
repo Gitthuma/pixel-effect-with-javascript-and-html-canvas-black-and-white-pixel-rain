@@ -15,3 +15,8 @@ const canvas = document.getElementById('canvas1');
 /*Reference canvas context using getContext 2D. This is to give it access to all 2d drawing methods*/
 
 const ctx = canvas.getContext('2d');
+
+/*Set canvas width and height to be the same as those in css. This is to make sure the scaling is correct*/
+
+canvas.width = 780;
+canvas.height = 440;
