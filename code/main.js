@@ -20,3 +20,14 @@ const ctx = canvas.getContext('2d');
 
 canvas.width = 780;
 canvas.height = 440;
+
+/*Draw image on canvas using built-in html canvas method drawImage. The method will take five arguments: The first is the image we want to draw,the second and third arguments are the (x,y) cordinates of our drawing starting point and the fourth and fifth arguments are the drawing end points represented as canvas width and height.*/
+
+ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
+
+/*Add event listener to myImage. This listens for a load event and pass it to a call back function*/
+
+myImage.addEventListener('load', function() {
+    
+});
+
