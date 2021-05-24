@@ -11,3 +11,7 @@ myImage.src = canvas.toDataURL('../images/disney-junior-T-O-T-S.jpg');
 /*Reference canvas using getElementById*/
 
 const canvas = document.getElementById('canvas1');
+
+/*Reference canvas context using getContext 2D. This is to give it access to all 2d drawing methods*/
+
+const ctx = canvas.getContext('2d');
