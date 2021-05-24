@@ -6,7 +6,9 @@ const myImage = new Image();
 
 /*Get image using the src propery. Use canvas.toDataURL to convert the image into a url string to avoid cross origin resource errors in some browsers when we scan the image with getImageData later.*/
 
-myImage.src = canvas.toDataURL('../images/disney-junior-T-O-T-S.jpg');
+/*Remove canvas.toDataURL. This will be included later.*/
+
+myImage.src = '../images/disney-junior-T-O-T-S.jpg';
 
 /*Reference canvas using getElementById*/
 
