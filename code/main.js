@@ -54,6 +54,8 @@ const numberOfParticles = 10000;
 
 /*Set the velocity of the falling particles using this.velocity inside the constructor method. This will be set to a random number between 0 and 0.5. Here we have falling speed which will be calculated based on the brightness of the background. Particles will fall over black areas very fast and over light areas of the image much slower. Velocity is here to give it some additional randomnes and make it more cooler.*/
 
+/*Set particle size using this.size inside the constructor method. This will be set to a random number between 1 and 2.5.*/
+
 class Particle {
 
     constructor() {
@@ -62,6 +64,7 @@ class Particle {
         this.y = 0;
         this.speed = 0;
         this.velocity = Math.random() * 0.5;
+        this.size = Math.random() * 1 + 1.5;
 
     }
 
