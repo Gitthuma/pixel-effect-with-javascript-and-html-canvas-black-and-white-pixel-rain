@@ -50,12 +50,15 @@ const numberOfParticles = 10000;
 
 /*Set starting point of the particle flow using this.y inside the constructor method. This is set to 0 so that it makes particles to splash over the image from top.*/
 
+/*Set the falling speed of the particles using this.speed inside the constructor method. This will be set to 0 at first.*/
+
 class Particle {
 
     constructor() {
 
         this.x = Math.random() * canvas.width;
         this.y = 0;
+        this.speed = 0;
 
     }
 
