@@ -62,6 +62,8 @@ const numberOfParticles = 10000;
 
 /*Add code inside the update method using an if statement, to reset the particles to zero once they fall below the bottom edge of the canvas. The particles will fall again after reset.*/
 
+/*Inside the if statement, give particles different random horizontal x position. This is important because particles will fall slower over light areas of the image and faster over dark areas of the image.*/
+
 class Particle {
 
     constructor() {
@@ -79,6 +81,7 @@ class Particle {
         this.y++;
         if (this.y >= canvas.height) {
             this.y = 0;
+            this.x = Math.random() * canvas.width;
         }
         
     }
