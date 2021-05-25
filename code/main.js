@@ -46,12 +46,16 @@ const numberOfParticles = 10000;
 
 /*Add constructor method inside the Particle class. This is a mandatory method inside JavaScript class and it will contain the blue print for each individual particle.*/
 
+/*Set the horizontal x coordinate using this.x inside the constructor method. This will be a random number between 0 and canvas width.*/
+
 class Particle {
 
     constructor() {
 
+        this.x = Math.random() * canvas.width;
+
     }
-    
+
 }
 
 });
