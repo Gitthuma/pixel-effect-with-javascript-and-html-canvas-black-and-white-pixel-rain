@@ -64,6 +64,8 @@ const numberOfParticles = 10000;
 
 /*Inside the if statement, give particles different random horizontal x position. This is important because particles will fall slower over light areas of the image and faster over dark areas of the image.*/
 
+/*Inside the if statement, randomize fall speed of the particles by making this.y iterate by this.velocity. Change this.velocity to be a random number between 0 and 3.5.*/
+
 class Particle {
 
     constructor() {
@@ -71,14 +73,14 @@ class Particle {
         this.x = Math.random() * canvas.width;
         this.y = 0;
         this.speed = 0;
-        this.velocity = Math.random() * 0.5;
+        this.velocity = Math.random() * 3.5;
         this.size = Math.random() * 1 + 1.5;
 
     }
 
     update() {
 
-        this.y++;
+        this.y+= this.velocity;
         if (this.y >= canvas.height) {
             this.y = 0;
             this.x = Math.random() * canvas.width;
