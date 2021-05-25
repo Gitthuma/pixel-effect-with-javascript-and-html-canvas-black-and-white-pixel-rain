@@ -35,9 +35,12 @@ ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
 
 /*Create a simple particle system that will produce a set of falling particles to flow over the image.*/
 
-/*Create a let variable and assign it an empty array*/
+/*Create a let variable and assign it an empty array. We use let here so that we can assign it to a new empty array later if we want to */
+
+/*Create a constant variable to represent number of particles and assign it the number of particles*/
 
 let particlesArray = [];
+const numberOfParticles = 10000;
 
 
 });
