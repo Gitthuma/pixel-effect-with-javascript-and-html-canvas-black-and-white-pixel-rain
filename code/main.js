@@ -56,6 +56,8 @@ const numberOfParticles = 10000;
 
 /*Set particle size using this.size inside the constructor method. This will be set to a random number between 1 and 2.5.*/
 
+/*Add update method after the constructor method. This will be used to calculate particle position for each frame before we draw it.*/
+
 class Particle {
 
     constructor() {
@@ -66,6 +68,10 @@ class Particle {
         this.velocity = Math.random() * 0.5;
         this.size = Math.random() * 1 + 1.5;
 
+    }
+
+    update() {
+        
     }
 
 }
