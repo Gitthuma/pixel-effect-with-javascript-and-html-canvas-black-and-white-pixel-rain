@@ -60,6 +60,8 @@ const numberOfParticles = 10000;
 
 /*Add an iteration of +1 to the y coordinate inside the update method. This will make the particles fall.*/
 
+/*Add code inside the update method using an if statement, to reset the particles to zero once they fall below the bottom edge of the canvas. The particles will fall again after reset.*/
+
 class Particle {
 
     constructor() {
@@ -75,6 +77,9 @@ class Particle {
     update() {
 
         this.y++;
+        if (this.y >= canvas.height) {
+            this.y = 0;
+        }
         
     }
 
