@@ -58,6 +58,8 @@ const numberOfParticles = 10000;
 
 /*Add update method after the constructor method. This will be used to calculate particle position for each frame before we draw it.*/
 
+/*Add an iteration of +1 to the y coordinate inside the update method. This will make the particles fall.*/
+
 class Particle {
 
     constructor() {
@@ -71,6 +73,8 @@ class Particle {
     }
 
     update() {
+
+        this.y++;
         
     }
 
