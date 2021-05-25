@@ -42,6 +42,17 @@ ctx.drawImage(myImage, 0, 0, canvas.width, canvas.height);
 let particlesArray = [];
 const numberOfParticles = 10000;
 
+/*Create a JavaScript class called Particle(capital p). This will be used to create 10,000 similar particle data objects and push them inside particleArray from line 42*/
+
+/*Add constructor method inside the Particle class. This is a mandatory method inside JavaScript class and it will contain the blue print for each individual particle.*/
+
+class Particle {
+
+    constructor() {
+
+    }
+    
+}
 
 });
 
