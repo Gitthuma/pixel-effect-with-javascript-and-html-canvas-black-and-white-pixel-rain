@@ -48,11 +48,14 @@ const numberOfParticles = 10000;
 
 /*Set the horizontal x coordinate using this.x inside the constructor method. This will be a random number between 0 and canvas width.*/
 
+/*Set starting point of the particle flow using this.y inside the constructor method. This is set to 0 so that it makes particles to splash over the image from top.*/
+
 class Particle {
 
     constructor() {
 
         this.x = Math.random() * canvas.width;
+        this.y = 0;
 
     }
 
