@@ -72,6 +72,8 @@ const numberOfParticles = 10000;
 
 /*Inside custom draw method, make canvas ctx white using fillstyle*/
 
+/*Inside custom draw method, use arc to draw a circle in the ctx. Give the arc function five arguments: x and y coordinates, size, start angle and end angle. For the sixe and x and y coordinates, we will use the values in the constructor method.*/
+
 class Particle {
 
     constructor() {
@@ -98,6 +100,7 @@ class Particle {
 
         ctx.beginPath();
         ctx.fillStyle = 'white';
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
 
     }
 
