@@ -70,7 +70,7 @@ const numberOfParticles = 10000;
 
 /*Inside custom draw method, add beginPath method to start drawing on the canvas ctx.*/
 
-/*Inside custom draw method, make canvas ctx white using fillstyle*/
+/*Inside custom draw method, use fillstyle to define circle color*/
 
 /*Inside custom draw method, use arc to draw a circle in the ctx. Give the arc function five arguments: x and y coordinates, size, start angle and end angle. For the sixe and x and y coordinates, we will use the values in the constructor method.*/
 
