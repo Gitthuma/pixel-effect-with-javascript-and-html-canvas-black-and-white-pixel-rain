@@ -70,6 +70,8 @@ const numberOfParticles = 10000;
 
 /*Inside custom draw method, add beginPath method to start drawing on the canvas ctx.*/
 
+/*Inside custom draw method, make canvas ctx white using fillstyle*/
+
 class Particle {
 
     constructor() {
@@ -95,6 +97,7 @@ class Particle {
     draw() {
 
         ctx.beginPath();
+        ctx.fillStyle = 'white';
 
     }
 
