@@ -68,6 +68,8 @@ const numberOfParticles = 10000;
 
 /*Add a custom draw method to draw a circle to represent a particle*/
 
+/*Inside custom draw method, add beginPath method to start drawing on the canvas ctx.*/
+
 class Particle {
 
     constructor() {
@@ -91,7 +93,9 @@ class Particle {
     }
 
     draw() {
-        
+
+        ctx.beginPath();
+
     }
 
 }
