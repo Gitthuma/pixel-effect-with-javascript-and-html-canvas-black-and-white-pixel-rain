@@ -66,6 +66,8 @@ const numberOfParticles = 10000;
 
 /*Inside the if statement, randomize fall speed of the particles by making this.y iterate by this.velocity. Change this.velocity to be a random number between 0 and 3.5.*/
 
+/*Add a custom draw method to draw a circle to represent a particle*/
+
 class Particle {
 
     constructor() {
@@ -85,6 +87,10 @@ class Particle {
             this.y = 0;
             this.x = Math.random() * canvas.width;
         }
+        
+    }
+
+    draw() {
         
     }
 
