@@ -80,6 +80,8 @@ const numberOfParticles = 10000;
 
 /*Inside init function, create a for loop. The loop will run as many times depending on the number of particle variable, in our case 10,000.*/
 
+/*Remove init function from inside Particle class.*/
+
 class Particle {
 
     constructor() {
@@ -111,13 +113,13 @@ class Particle {
 
     }
 
-    function init() {
+}
+
+function init() {
 
         for (let i = 0; i < numberOfParticles; i++);
         
     }
-
-}
 
 });
 
