@@ -158,6 +158,10 @@ function animate() {
     requestAnimationFrame(animate);
 
 }
+
+/*Call animate to kick off animation loop*/
+
+animate();
     
 });
 
