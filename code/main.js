@@ -76,6 +76,8 @@ const numberOfParticles = 10000;
 
 /*Inside custom draw method, call fill method to add fillstyle color into the drawn circle.*/
 
+/*Create custom function init after draw method*/
+
 class Particle {
 
     constructor() {
@@ -105,6 +107,10 @@ class Particle {
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
 
+    }
+
+    function init() {
+        
     }
 
 }
