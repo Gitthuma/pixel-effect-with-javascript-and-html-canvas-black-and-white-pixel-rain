@@ -135,9 +135,12 @@ init();
 
 /*Set ctx transparency using globalAlpha*/
 
+/*Set ctx color using fillstyle*/
+
 function animate() {
 
     ctx.globalAlpha = 0.05;
+    ctx.fillStyle = 'rgb(0, 0, 0)';
 
 }
     
