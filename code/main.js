@@ -151,8 +151,8 @@ function animate() {
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < particlesArray.length; i++) {
-        particlesArray[i].update;
-        particlesArray[i].draw;
+        particlesArray[i].update(); //Corrected update method syntax
+        particlesArray[i].draw(); //Corrected draw method syntax
     }
 
     requestAnimationFrame(animate);
