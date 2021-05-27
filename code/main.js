@@ -82,6 +82,8 @@ const numberOfParticles = 10000;
 
 /*Remove init function from inside Particle class.*/
 
+/*Inside for loop, call built in push method on particle array from line 42. Push method places whatever we pass to it at the end of the array, in our case we will place a new particle from our Particle class. The new key word will trigger the Particle class constructor on line 89. It will create one new blank particle object and assign it properties and randomized values based on the class blue print. For loop will run 10,000 times filling particle array with 10,000 randomized particle objects.*/
+
 class Particle {
 
     constructor() {
@@ -117,7 +119,9 @@ class Particle {
 
 function init() {
 
-        for (let i = 0; i < numberOfParticles; i++);
+        for (let i = 0; i < numberOfParticles; i++){
+            particlesArray.push(new Particle);
+        }
         
     }
 
