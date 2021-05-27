@@ -131,8 +131,14 @@ init();
 
 /*Create a custom function animate. This will be our main animation loop.*/
 
+/*Draw a semi transparent black triangle over the canvas for every frame. This will give particles fading trails. To do this:*/
+
+/*Set ctx transparency using globalAlpha*/
+
 function animate() {
-    
+
+    ctx.globalAlpha = 0.05;
+
 }
     
 });
