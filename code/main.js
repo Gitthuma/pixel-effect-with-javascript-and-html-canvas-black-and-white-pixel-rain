@@ -139,11 +139,14 @@ init();
 
 /*Draw rectangle using built in method fillRect. This method takes four arguments: The first two are x and y starting points and the last two are x and y end points.*/
 
+/*Create a for loop to cycle through the particleArray we created in the init function.*/
+
 function animate() {
 
     ctx.globalAlpha = 0.05;
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < particlesArray.length; i++);
 
 }
     
