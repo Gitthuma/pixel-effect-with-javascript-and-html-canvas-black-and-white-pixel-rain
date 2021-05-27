@@ -141,12 +141,17 @@ init();
 
 /*Create a for loop to cycle through the particleArray we created in the init function.*/
 
+/*Inside the for loop, call the update method from line 91 and the draw method from line 101 for each particle object. This for loop will cycle through the 10,000 particles for each frame of animation. It will recalculate their position using the update method and it will draw them at their new coordinates with the draw method.*/
+
 function animate() {
 
     ctx.globalAlpha = 0.05;
     ctx.fillStyle = 'rgb(0, 0, 0)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < particlesArray.length; i++);
+    for (let i = 0; i < particlesArray.length; i++) {
+        particlesArray[i].update;
+        particlesArray[i].draw;
+    }
 
 }
     
