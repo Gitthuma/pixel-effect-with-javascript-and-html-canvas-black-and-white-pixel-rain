@@ -143,6 +143,8 @@ init();
 
 /*Inside the for loop, call the update method from line 91 and the draw method from line 101 for each particle object. This for loop will cycle through the 10,000 particles for each frame of animation. It will recalculate their position using the update method and it will draw them at their new coordinates with the draw method.*/
 
+/*Inside the animate function, call requestAnimationFrame method and pass it the argument animate. requestAnimationFrame is a built-in JavaScript method which when I pass it the argument animate, the name of its parent function from line 148, it will make the function run its code again when the loop terminates. This will allow us to run the loop again and again when we call the animate function later. This is a programing principle called recursion.*/
+
 function animate() {
 
     ctx.globalAlpha = 0.05;
@@ -152,6 +154,8 @@ function animate() {
         particlesArray[i].update;
         particlesArray[i].draw;
     }
+
+    requestAnimationFrame(animate);
 
 }
     
