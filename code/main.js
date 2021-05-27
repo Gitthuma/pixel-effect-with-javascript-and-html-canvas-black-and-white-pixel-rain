@@ -128,6 +128,12 @@ function init() {
 /*Call the init function to fill in the array*/
 
 init();
+
+/*Create a custom function animate. This will be our main animation loop.*/
+
+function animate() {
+    
+}
     
 });
 
