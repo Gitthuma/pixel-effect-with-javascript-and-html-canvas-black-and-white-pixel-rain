@@ -76,7 +76,9 @@ const numberOfParticles = 10000;
 
 /*Inside custom draw method, call fill method to add fillstyle color into the drawn circle.*/
 
-/*Create custom function init after draw method*/
+/*Create custom function init after draw method. Init is short for initialize.*/
+
+/*Inside init function, create a for loop. The loop will run as many times depending on the number of particle variable, in our case 10,000.*/
 
 class Particle {
 
@@ -110,6 +112,8 @@ class Particle {
     }
 
     function init() {
+
+        for (let i = 0; i < numberOfParticles; i++);
         
     }
 
